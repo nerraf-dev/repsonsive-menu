@@ -1,3 +1,4 @@
+/* https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/ */
 /* Theming */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');/* import font */
 
@@ -67,13 +68,13 @@ ul{
 }
 
 /* Menu ICon */
-.hamb {
+.hb {
   cursor: pointer;
   float: right;
   padding: 30px 20px;
 }
 /* label */
-.hamb-line {
+.hb-line {
   background: var(--white);
   display: block;
   height: 2px;
@@ -81,8 +82,8 @@ ul{
   width: 24px;
 }
 /* span tag */
-.hamb-line::before,
-.hamb-line::after {
+.hb-line::before,
+.hb-line::after {
   background: var(--white);
   content: '';
   display: block;
@@ -92,11 +93,11 @@ ul{
   width: 100%;
 }
 
-.hamb-line::before {
+.hb-line::before {
   top: 5px;
 }
 
-.hamb-line::after {
+.hb-line::after {
   top: -5px;
 }
 
@@ -109,12 +110,12 @@ ul{
   max-height: 100%;
 }
 
-/* .side-menu:checked ~ .hamb .hamb-line::before {
+/* .side-menu:checked ~ .hb .hb-line::before {
   transform: rotate(-45deg);
   top:0;
 }
 
-.side-menu:checked ~ .hamb .hamb-line::after {
+.side-menu:checked ~ .hb .hb-line::after {
   transform: rotate(45deg);
   top: 0;
 } */
@@ -139,7 +140,7 @@ ul{
     background-color: transparent;
     color: var(--gray);
   }
-  .hamb {
+  .hb {
     display: none;
   }
   .logo {
